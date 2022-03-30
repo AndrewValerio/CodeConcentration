@@ -65,7 +65,7 @@ I think I would spend more time on figuring out and understanding the dynamicall
 
 ## Interview Recording URL Link
 
-https://ucr.zoom.us/rec/play/eaoMqvKLiRIcvPapDQgRJu5k3rNtms4GTMW9J1u3I8RPq1sHDp65JK8gJhCtcIgxJv6kxlwmKW8fnd4R.mM31F0qWT2MrUxly?autoplay=true&startTime=1648622473000
+https://ucr.zoom.us/rec/share/nhjqzJaxcdXRMW2t8xrFHHwLm0sPSn80Wl3zF4acvmXiFZ7lqUtW08Embwj7-m5a.UqTpekT2kGulJTD7?startTime=1648622473000 (Passcode: OKDw8dC&)
 
 
 ## License
