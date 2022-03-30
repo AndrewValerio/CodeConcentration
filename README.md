@@ -43,6 +43,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 <img src = "http://g.recordit.co/VukN9ooMRK.gif" width = 250><br>
 <img src = "http://g.recordit.co/GPLQvTyoUt.gif" width = 250><br>
 <img src = "http://g.recordit.co/CBXNcHR39d.gif" width = 250><br>
+<img src = "http://g.recordit.co/lWY3qt4liq.gif" width = 250><br>
 
 
 ## Reflection Questions
