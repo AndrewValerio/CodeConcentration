@@ -1,30 +1,83 @@
-# Hello website!
+# Pre-work - *Memory Game*
 
-This is a basic HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen ✨ immediately in the preview window. On the left you'll see the files that make up your site, including HTML, JavaScript, and CSS. You can upload assets like images or audio in `assets`. The rest is up to you and your imagination. 🦄
+**Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
 
-## What's in this project?
+Submitted by: Andrew Valerio
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+Time spent: 5 hours spent in total
 
-← `index.html`: This is the main web page for your site. The HTML defines the structure and content of the page using _elements_. You'll see references in the HTML to the JS and CSS files. Try clicking the image in the center of the page!
+Link to project: (https://glitch.com/edit/#!/eminent-extreme-heart) (https://github.com/AndrewValerio/CodeConcentration)
 
-← `style.css`: CSS files add styling rules to your content. The CSS applies styles to the elements in your HTML page. The style rules also make the image move when you click it.
+## Required Functionality
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript. The code in the JavaScript file runs when the page loads, and when the visitor clicks the button you can add below.
+The following **required** functionality is complete:
 
-Open each file and check out the comments (in gray) for more info.
+* [Yes] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
+* [Yes] "Start" button toggles between "Start" and "Stop" when clicked. 
+* [Yes] Game buttons each light up and play a sound when clicked. 
+* [Yes] Computer plays back sequence of clues including sound and visual cue for each button
+* [Yes] Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess. 
+* [Yes] User wins the game after guessing a complete pattern
+* [Yes] User loses the game after an incorrect guess
 
-## Try this next 🏗️
+The following **optional** features are implemented:
 
-Take a look in `TODO.md` for next steps you can try out in your new site!
+* [Yes] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
+* [Yes] Buttons use a pitch (frequency) other than the ones in the tutorial
+* [Yes] More than 4 functional game buttons
+* [Yes] Playback speeds up on each turn
+* [Yes] Computer picks a different pattern each time the game is played
+* [Yes] Player only loses after 3 mistakes (instead of on the first mistake)
+* [No] Game button appearance change goes beyond color (e.g. add an image)
+* [No] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
+* [No] User has a limited amount of time to enter their guess on each turn
 
-___Want a minimal version of this project to build your own website? Check out [Blank Website](https://glitch.com/edit/#!/remix/glitch-blank-website)!___
+The following **additional** features are implemented:
 
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
+- [ ] List anything else that you can get done to improve the app!
 
-## You built this with Glitch!
+## Video Walkthrough (GIF)
 
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
+If you recorded multiple GIFs for all the implemented features, you can add them here:
+https://recordit.co/VukN9ooMRK
+https://recordit.co/GPLQvTyoUt
+https://recordit.co/CBXNcHR39d
 
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+
+## Reflection Questions
+1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
+https://stackoverflow.com/questions/52909830/typeerror-cannot-read-property-classlist-of-null
+https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
+https://www.w3.org/wiki/CSS/Properties/color/keywords
+https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/math/random
+
+2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
+I encountered an error in my code as I was given a "TypeError: Cannot read property 'classList' of null" error which lead to me reviewing the code until I noticed that my id for button was "id = Button1" for all the corrosponding buttons instead of having the 'B' lowercase to "id = button1" for all the buttons. Additionally I encountered another obstacle when developing the guess(btn) function to where after I played a game I wouldn't be able to go through a new game unless i refreshed the page. I even resorted to trying the given algorithm/logic for it with the same issue which I eventually was able to fix by resetting guessCounter to 0 after every successful sequence reproduced by the user that didn't result in the game ending. I drew out how the program was working which helped me vizualize the processes it needed to go through every time it looped through the logic. The problem was that the game would play back the sequence but would think you are at the last button for the sequence before, instead of starting the guesses at the beginning so resetting guessCounter to zero within the loop solved the issue. 
+
+3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
+A question I have about web development after this submission is that specifically on this project, what is the most practical and efficient way to have the text in HTML be dynamically modified. In my case I attempted to have a text where it displays the number of strikes you have left as you play, similar to how a countdown timer will function. I used this resource https://www.informit.com/articles/article.aspx?p=2832403&seqNum=12 but I still didn't really understand how to do it in a way that I can develop the function in the script.js file and just have the identifier in the index.html file.
+
+4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+I think I would spend more time on figuring out and understanding the dynamically modified text within the game and use it to add a countdown timer and a number of strikes left indicator as it would add a more intense experience. I would also change my method of making the game speed up as in the beginning it works a little too slow and then in the last sequence before winning it goes a little too fast in my opinion. After that I think I would just add a better color choice to make the game more proffessional looking and mess with the fonts to see what works best.
+
+## Interview Recording URL Link
+
+[My 5-minute Interview Recording](your-link-here)
+
+
+## License
+
+    Copyright Andrew Valerio
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
