@@ -6,7 +6,7 @@ Submitted by: Andrew Valerio
 
 Time spent: 5 hours spent in total
 
-Link to project: (https://glitch.com/edit/#!/eminent-extreme-heart) (https://github.com/AndrewValerio/CodeConcentration)
+Link to project: (https://glitch.com/edit/#!/eminent-extreme-heart) (https://github.com/AndrewValerio/ColorConcentration)
 
 ## Required Functionality
 
