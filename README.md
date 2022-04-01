@@ -50,6 +50,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
+https://stackoverflow.com/questions/48557368/how-to-stop-countdown-after-zero
 https://stackoverflow.com/questions/52909830/typeerror-cannot-read-property-classlist-of-null
 https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
