@@ -30,7 +30,7 @@ The following **optional** features are implemented:
 * [Yes] Player only loses after 3 mistakes (instead of on the first mistake)
 * [No] Game button appearance change goes beyond color (e.g. add an image)
 * [No] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
-* [No] User has a limited amount of time to enter their guess on each turn
+* [Yes] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
