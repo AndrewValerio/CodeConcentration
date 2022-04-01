@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app!
 - [ ] Timer has a display and is paused when user presses stop, then resets back to 10 when they click start again.
-- [ ] Timer shows that the user loses once time hits zero.
+- [ ] Timer shows that the user loses once time hits zero, an resets as new game is started.
 
 ## Video Walkthrough (GIF)
 
