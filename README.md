@@ -34,10 +34,10 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app!
 - [ ] Timer has a display and is paused when user presses stop, then resets back to 10 when they click start again.
-- [ ] Timer shows that the user loses once time hits zero, an resets as new game is started.
+- [ ] Timer shows that the user loses once time hits zero, and resets as new game is started.
 - [ ] Number of Strikes is displayed and once it reaches zero the game ends.
+- [ ] Number of strikes resets when a new game is started.
 - [ ] Timer increases in time depending ton the progress of the user in the game.
 
 ## Video Walkthrough (GIF)
