@@ -2,8 +2,9 @@
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
+
 //Global Variables
-var pattern = [3, 6, 5, 6, 2, 1, 2, 4, 9, 9, 7, 8, 9, 5, 1];
+var pattern = [3, 6, 7, 1, 9, 9, 3, 2, 5, 6, 5, 7, 8, 4, 4, 5, 1, 3];
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -12,6 +13,55 @@ var guessCounter = 0;
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 var holdModifier = 30;
 var strikes = 2;
+var time = 10;
+var myTimeout = -1;
+var startBtn = document.getElementById("startBtn");
+var stopBtn = document.getElementById("stopBtn");
+var timeEl = document.getElementById("countdown");
+var strikeEl = document.getElementById("strikes");
+
+function start(){
+  startGame();
+  startTimer();
+}
+
+function stop(){
+  stopGame();
+  stopTimer();
+}
+
+function startTimer (){
+    if (time === 0){
+      loseGame();
+      stopTimer();
+    }
+    else if(gamePlaying == true){
+    document.getElementById("countdown").innerHTML = time;
+    setTimeout(function(){
+      time--;
+      startTimer();
+    }, 1000);
+    }
+}
+
+
+function stopTimer (){
+  gamePlaying = false;
+  time = 10;
+  clearTimeout(myTimeout);
+  myTimeout = 1;
+}
+
+function strikeCounter(){
+  document.getElementById("strikes").innerHTML = strikes;
+  if(strikes > 0){
+    strikes--;
+  }
+  else{
+    loseGame();
+    stopTimer();
+    }
+  }
 
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
@@ -73,7 +123,7 @@ function playClueSequence() {
     }
   }
 
-function guess(btn) {
+function guess(btn) {  
   console.log("user guessed: " + btn);
 
   if (!gamePlaying) {
@@ -87,23 +137,16 @@ function guess(btn) {
       }else{
         progress++;
         guessCounter = 0;
+        time = 10 * progress;
         playClueSequence();
       }
     }else{
       guessCounter++;
     }
   }else{
-    if (strikes > 0){
-    strikes--;
-    console.log("Number of Strikes: " + strikes);
-    }
-    else{
-      strikes = 2;
-    loseGame();
-    }
-  }
-}  
-
+    strikeCounter();
+  }  
+}
 /*
 function guess(btn){
   console.log("user guessed: " + btn);
