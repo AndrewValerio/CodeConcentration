@@ -1,6 +1,7 @@
 <html lang="en">
   <head>
     <title>Light and Memory Sound Game</title>
+    <title>Countdown Time</title>
 
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -15,12 +16,20 @@
       Hello! Welcome to <strong>Color Concentration</strong>! Here you follow a
       pattern of colored buttons with a sound. Repeat back the pattern and upon
       every successful attempt, it will add one more button for you to remember while increasing
-      the sequence speed. You have 3 strikes ir else you lose, can you make it to the end?
+      the sequence speed. You have 3 strikes and a increasing time limit per successful guesses, can you make it to the end?
     </p>
 
-    <button id="startBtn" onclick="startGame()">Start</button>
-    <button id="stopBtn" onclick="stopGame()" class="hidden">Stop</button>
+    <button id="startBtn" onclick="start()">Start</button>
+    <button id="stopBtn" onclick="stop()" class="hidden">Stop</button>
     
+    
+    <p>Time Left:</p>
+    
+    <p id = "countdown">10</p>
+    
+    <p>Strikes Left:</p>
+    
+    <p id = "strikes">3</p>
     
     <div id="gameButtonArea">
       <button
