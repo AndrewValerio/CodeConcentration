@@ -76,6 +76,10 @@ function shuffleArray(array) {
 
 function startGame() {
   //initialize game variables
+  strikes = 2;
+  time = 10;
+  document.getElementById("countdown").innerHTML = 10;
+  document.getElementById("strikes").innerHTML = 3;
   progress = 0;
   gamePlaying = true;
   // swap the Start and Stop buttons
